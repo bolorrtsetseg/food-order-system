@@ -24,8 +24,6 @@ source .venv/bin/activate
 python -m unittest discover -s tests -v
 ```
 
-TC01–TC06 нь лабораторийн шаардлагын дагуу, нэмэлт 2 тест нь захиалга хадгалалт/хувийн мэдээллийн эрх ба CSRF шалгана.
-
 ## GitHub
 
 ```bash
@@ -41,11 +39,3 @@ git branch -M main
 git remote add origin https://github.com/USERNAME/food-order-starter.git
 git push -u origin main
 ```
-
-## Анхаарах зүйл
-
-- `food.db` нь локал SQLite сан бөгөөд `.gitignore`-д орсон.
-- Хуучин `food.db`-г шинэ төсөлд **хуулж болохгүй**: хуучин хүснэгтийн бүтэц өөр. Шинэ хавтсаас эхлүүл.
-- Нууц үг хэшлэгдэнэ, SQL параметртэй, Jinja автоматаар HTML escape хийнэ, POST хүсэлт CSRF token шалгана.
-- `SECRET_KEY`-г бодит орчинд заавал environment variable-аар тохируулна. `debug=True` зөвхөн локал сургалтад.
-- Энэ нь сургалтын demo; бодит төлбөр болон хүргэлтийн API байхгүй.
